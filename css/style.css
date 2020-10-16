@@ -1,0 +1,47 @@
+@import 'utilities.css';
+:root{
+    --primary:#3DCFD3;  
+    --dark:#161616;       
+    --pure:#FFFFFF;      
+    --Ternary:#898989;
+    --light:#F2F2F2;
+
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+   
+}
+Body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background:var(--dark);
+    height: 800px;
+}
+.container{
+    max-width: 1125px;
+    padding: 0 15 px;
+    margin: 0 auto;
+}
+header nav .left a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+header nav .left a:hover{
+    color: var(--primary);
+    transition: all .3s ease;
+}
+
+header nav {
+    padding: 2rem 0;
+}
+header nav .branding {
+    margin-right: 3rem;
+}
+header nav a{
+    margin: 0 1.2rem;
+}
