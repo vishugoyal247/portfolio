@@ -19,7 +19,8 @@ Body{
 }
 header{
     background:var(--dark);
-    height: 800px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 90%,0 100%);
+    
 }
 .container{
     max-width: 1200px;
@@ -45,3 +46,40 @@ header nav .branding {
 header nav a{
     margin: 0 1.2rem;
 }
+.hero{
+    padding: 3rem 0;
+}
+.hero .left img  {
+    /* float: left; */
+    margin-bottom: 10rem;
+    width: 600px;
+    height: 600px;
+    padding: -3rem 0 3rem 0;
+}
+.hero .right {
+    color:var(--pure);
+    padding: 4rem 0;
+}
+.hero .right h6{
+      font-size: 1.6rem;
+      color:var(--primary);
+      margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span{
+    color:var(--primary); 
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.hero .right{
+    margin-top: -7rem;
+}
+
