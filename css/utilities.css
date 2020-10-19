@@ -1,10 +1,10 @@
 .flex {
     display: flex;
 }
-.items-center{
+.vertical-center{
     align-items: center;
 }
-.justify-between{
+.space-around{
     justify-content: space-around;
 }
 .btn{
@@ -39,9 +39,9 @@
     color:var(--secondary);
 
 }
-.flex1{
+.flex-1{
     flex:1;
 }
-.justify-center{
+.horizontal-center{
     justify-content: center;
 }

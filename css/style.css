@@ -14,72 +14,113 @@
     -webkit-font-smoothing: antialiased;
    
 }
-Body{
-    font-family: 'Poppins', sans-serif;
-}
 header{
-    background:var(--dark);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 90%,0 100%);
+    background-color: var(--dark);
+    height: 950px;
+    clip-path:polygon( 0 0 ,100% 0 ,100% 100% ,70% 90% ,0 100%);
+}
+body{
+    font-family: 'poppin', 'sans-serif';
+}
+header nav{
+    padding: 1rem 0;
+    display: flex;
+    flex-shrink: 1;
+}
+header nav  .branding{
+    margin: 3rem;
+}
+
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+    height: 800px;
     
 }
-.container{
-    max-width: 1200px;
-    padding: 0 15 px;
-    margin: 0 auto;
-}
 header nav .left a{
-    color: white;
+    color: var(--pure);
     text-decoration: none;
+    margin-right: 2rem;
     text-transform: uppercase;
 }
 header nav .left a:hover{
     color: var(--primary);
-    transition: all .3s ease;
+    transition: all 0.3s ease;
 }
-
-header nav {
-    padding: 2rem 0;
+header section{
+    margin:2rem 0;
 }
-header nav .branding {
-    margin-right: 3rem;
+header section .left img{
+    height: 500px;
+    margin-left: 100px;
 }
-header nav a{
-    margin: 0 1.2rem;
-}
-.hero{
-    padding: 3rem 0;
-}
-.hero .left img  {
-    /* float: left; */
-    margin-bottom: 10rem;
-    width: 600px;
-    height: 600px;
-    padding: -3rem 0 3rem 0;
-}
-.hero .right {
+header section .right{
     color:var(--pure);
-    padding: 4rem 0;
+    margin-top: 1.5rem;
+
 }
-.hero .right h6{
-      font-size: 1.6rem;
-      color:var(--primary);
-      margin-bottom: 0.5rem;
+header section .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
 }
-.hero .right h1{
+header section .right h1{
     font-size: 4rem;
-    font-weight: 100;
-    line-height: 1.2;
+    font-weight: 100; 
+    line-height:1.2;
     margin-bottom: 2rem;
 }
-.hero .right h1 span{
-    color:var(--primary); 
+header section .right h1 .white{
+    color: var(--primary);
+
 }
-.hero .right p{
-    line-height: 1.9;
+header section .right p{
     margin-bottom: 2rem;
+    text-align: justify;
+    line-height: 1.5;
+}
+body>section{
+    padding: 3rem 0;
+
+}
+body>section .about .about-image{
+    height: 420px;
+}
+body>section .right h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+body>section .right span{
+    color: var(--primary);
+}  
+body>section .right h4{
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    
+} 
+body>section .right p{
+   font-family: 'Lato','sans-serif';
+   color: var(--Ternary);
+   line-height: 1.9;
+   margin-bottom: 2rem;
 }
 
-.hero .right{
-    margin-top: -7rem;
+body>section .right .social a{
+    text-decoration: none;
+    display: inline flex;
+    
+
 }
+.one{
+    margin:0px 30px;
+ 
+}
+
+
 
