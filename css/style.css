@@ -5,6 +5,7 @@
     --pure:#FFFFFF;      
     --Ternary:#898989;
     --light:#F2F2F2;
+    --secondary:#070606;
 
 }
 *{
@@ -36,7 +37,7 @@ header nav  .branding{
     max-width: 1152px;
     padding: 0 15px;
     margin: 0 auto;
-    height: 800px;
+    max-height: 800px;
     
 }
 header nav .left a{
@@ -82,6 +83,10 @@ header section .right p{
     text-align: justify;
     line-height: 1.5;
 }
+
+/* ***********about-us******************* */
+
+
 body>section{
     padding: 3rem 0;
 
@@ -91,7 +96,7 @@ body>section .about .about-image{
 }
 body>section .right h1{
     margin-bottom: 1rem;
-    font-size: 1.6rem;
+    font-size: 50px;
     font-weight: 400;
 }
 body>section .right span{
@@ -121,6 +126,124 @@ body>section .right .social a{
     margin:0px 30px;
  
 }
+/* ********skills************* */
+body  .skills  {
+    max-width: 100%;
+    /* color: var(--secondary); */
+}
+body  .skills .container{
+   max-width: 1350px ; 
+   padding: 30px 120px;
+    max-height: 1000px;
+   
+   
+}
+body  .skills .container .section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin: 1rem 0;
+    line-height: 0.5;
+}
 
+body  .skills .container .section-heading h1{
+  font-size: 50px;
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  /* text-align: center; */
+}
+body  .skills .container .section-heading h1 span{
+    color: var(--primary);
+}
+body  .skills .container .section-heading  p{
+    color: var(--Ternary);
+    font-family: 'Lato','sans-serif';
+    margin: 1rem 0;
+    line-height: 1.5;
+    /* text-align: center; */
+    margin-bottom: 6rem;
+}
+body  .skills .container {
+    background-color: var(--light);
+}
+body  .skills .container .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+body  .skills .container .card-wrapper .card{
+    background-color:var(--pure) ;
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    text-align: center;
+    transition: all 0.8s ease;
+}
+body  .skills .container .card-wrapper .card img{
+    position: absolute;
+    top:-3.5rem;
+    left:50%;
+    transform: translateX(-50%);
 
+}
+body  .skills .container .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem; 
+    margin-bottom: 0.5rem;
+}
+body  .skills .container .card-wrapper .card p{
+    font-family: 'lato' , 'sans-serif';
+    color: var(--Ternary);
+    line-height: 1.6;
+}
+body  .skills .container .card-wrapper .card:hover{
+    background-color: var(--dark);
+    border-radius: 50px;
+}
+.skills .card-wrapper .card:hover h2{
+    color:var(--primary);
+}
+.skills .card-wrapper .card:hover p{
+    color:var(--pure);
+}
+/* ************freelauncer***************** */
+body .freelauncer {
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) , url(/Images/camera.png);
+    color: var(--pure);
+    clip-path:polygon( 0 0 ,100% 0 ,100% 100% ,67% 75% ,0 100%);
+    height: 300px;
+}
 
+body .freelauncer .two:hover{
+    cursor: pointer;
+   
+}
+
+body .freelauncer .f-left{
+    float: left;
+    margin-left:50px ;
+    color: var(--primary);
+} 
+body .freelauncer .f-right{
+    float: right;
+    margin-right: 50px;
+    color: var(--primary);
+   
+} 
+
+body .freelauncer h1{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+body .freelauncer h1 span{
+    color: var(--primary);
+}
+body .freelauncer p{
+    margin-bottom: 2rem;
+    font-size: 17px ; 
+    font-family: 'lato' ,sans-serif';   
+                 
+}
