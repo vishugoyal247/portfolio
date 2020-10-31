@@ -132,16 +132,18 @@ body>section .about .about-image{
 }
 body>section .right h1{
 
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
+    float: left;
     font-size: 50px;
     font-weight: 400;
+
 }
 body>section .right span{
 
     color: var(--primary);
 }  
 body>section .right h4{
-
+    clear: both;
     font-size: 1rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
@@ -149,7 +151,7 @@ body>section .right h4{
     
 } 
 body>section .right p{
-
+   clear: both;
    font-family: 'Lato','sans-serif';
    color: var(--Ternary);
    line-height: 1.9;
@@ -354,16 +356,17 @@ body .freelauncer p{
    
 }
 
- .clients .container p , h1{
+ .clients .container p {
 
     text-align: center;
+    font-size: 1.2rem;
    
 }
 
 .clients .container h1{
-
+        text-align: center;
         margin-bottom: 1rem;
-        font-size: 30px;
+        font-size: 50px;
         font-weight: 400;
 }
 .clients .container span{
@@ -377,6 +380,7 @@ body .freelauncer p{
      height: 200px;
      width: 200px;
      border-radius: 100px;
+     border: 4px solid black;
 }
 .clients .container  .slide{
 
@@ -429,4 +433,111 @@ section .slider-dots ul.dots li.slick-active button{
 
     background: var(--primary);
     width: 25px;
+}
+
+
+
+
+
+
+/* *******************projects********************* */
+
+.project {
+    background: var(--light);
+}
+
+.project .container h1{
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.project .container span{
+    
+    color: var(--primary);
+}
+.project .container p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+.project .card-wrapper {
+    display: grid;
+    margin: 0 4rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:2rem ;
+}
+.project .card-wrapper .card .overlap{
+     
+    opacity: 0;
+
+}
+.project .card-wrapper .card:hover .overlap{
+  opacity: 0.91;
+}
+.project .card-wrapper .card{
+    
+    position: relative;
+}
+.project .card-wrapper .card .overlap{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Ternary);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.project .card-wrapper .card .overlap span {
+    color: #070606;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.project .card-wrapper .card .overlap a{
+    text-decoration: none;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+
+
+/* ******************************blog******************************** */
+.blog{
+    margin-top: 3rem;
+}
+.blog .container h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+}
+.blog .container span{
+    
+   color: var(--primary);
+}
+.blog .container p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.blog .card-wrapper  {
+    padding: 4rem 2rem;
+    display: flex;
+}
+.blog .card-wrapper .card .card-content{
+
+    text-align: center;
+
+
+}
+.blog .card-wrapper .card .card-content p{
+    
 }
