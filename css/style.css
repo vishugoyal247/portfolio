@@ -512,8 +512,12 @@ section .slider-dots ul.dots li.slick-active button{
 /* ******************************blog******************************** */
 .blog{
     margin-top: 3rem;
+    background-color: var(--dark);
+  
+  
 }
 .blog .container h1{
+    color: var(--pure);
     text-align: center;
     font-size: 50px;
     font-weight: 400;
@@ -526,18 +530,56 @@ section .slider-dots ul.dots li.slick-active button{
 }
 .blog .container p{
     text-align: center;
+    color: var(--pure);
     font-size: 1.2rem;
+    margin-bottom: 2rem;
 }
-.blog .card-wrapper  {
-    padding: 4rem 2rem;
-    display: flex;
-}
-.blog .card-wrapper .card .card-content{
-
-    text-align: center;
-
-
-}
-.blog .card-wrapper .card .card-content p{
+.blog .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0 4rem;
+    grid-gap: 4rem;
     
+}
+.blog .card-wrapper .card {
+    background-color: var(--pure);
+}
+/* .blog .card-wrapper .card .card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+.blog .card-wrapper .card-content{
+    padding: 2rem;
+}
+.blog .card-wrapper .card-content a{
+    color:var(--dark);
+    text-decoration: none;
+    
+}
+.blog .card-wrapper .card-content a:hover{
+    color: var(--primary);
+}
+.blog .card-wrapper .card-content h3{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+
+}
+.blog .card-wrapper .card-content span{
+    color:var(--Ternary);
+    font-size: 0.8rem;
+  
+
+}
+.blog .card-wrapper .card-content p{
+    font-family: 'lato' 'sans-serif';
+    color: var(--Ternary);
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.blog .card-wrapper .card-content .read-more{
+    font-size: 0.8rem;
+    
+
 }
