@@ -513,8 +513,8 @@ section .slider-dots ul.dots li.slick-active button{
 .blog{
     margin-top: 3rem;
     background-color: var(--dark);
-  
-  
+    clip-path: polygon(0 0 , 100% 0 , 100% 100%,72% 90% ,0 100%);
+    padding-bottom: 10rem;  
 }
 .blog .container h1{
     color: var(--pure);
